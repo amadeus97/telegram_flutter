@@ -16,6 +16,10 @@ dependencies:
   get_it: ^7.6.0
   get_it_mixin: ^4.2.0
   shared_preferences: ^2.1.2
+  tdlib:
+    git:
+      url: git@github.com:ivk1800/tdlib-dart.git
+      ref: 90171aa7692bb07781ec21f98c41e66d91f8cb9d
 
 dev_dependencies:
   flutter_test:
