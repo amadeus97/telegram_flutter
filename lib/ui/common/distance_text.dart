@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tg_app/logic/settings_manager.dart';
+import 'package:telegram_flutter/logic/settings_manager.dart';
 import 'package:get_it_mixin/get_it_mixin.dart';
 
 class DistanceText extends StatelessWidget with GetItMixin {

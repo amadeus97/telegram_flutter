@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
-import 'package:tg_app/logic/utils/prefs_file.dart';
+import 'package:telegram_flutter/logic/utils/prefs_file.dart';
 
 /// A persistent settings manager with a couple of example settings.
 /// Each setting can be bound to individually from the UI.

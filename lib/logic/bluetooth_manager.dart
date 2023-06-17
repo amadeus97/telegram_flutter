@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
-import 'package:tg_app/logic/bluetooth_service.dart';
-import 'package:tg_app/logic/data/bluetooth_device_info.dart';
+import 'package:telegram_flutter/logic/bluetooth_service.dart';
+import 'package:telegram_flutter/logic/data/bluetooth_device_info.dart';
 import 'package:get_it/get_it.dart';
 
 /// Manages a service that scans bluetooth devices, and exposes that data to the UI.

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tg_app/main.dart';
+import 'package:telegram_flutter/main.dart';
 
 /// Manages app wide tasks like first-run initialization,
 /// showing dialogs or changing pages.

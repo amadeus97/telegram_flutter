@@ -1,3 +1,3 @@
-# tg_app
+# telegram_flutter
 
 A new Flutter project.

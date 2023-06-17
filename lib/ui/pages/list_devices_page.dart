@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tg_app/logic/bluetooth_manager.dart';
-import 'package:tg_app/logic/data/bluetooth_device_info.dart';
-import 'package:tg_app/main.dart';
-import 'package:tg_app/ui/common/distance_text.dart';
-import 'package:tg_app/ui/modals/ok_cancel_dialog.dart';
+import 'package:telegram_flutter/logic/bluetooth_manager.dart';
+import 'package:telegram_flutter/logic/data/bluetooth_device_info.dart';
+import 'package:telegram_flutter/main.dart';
+import 'package:telegram_flutter/ui/common/distance_text.dart';
+import 'package:telegram_flutter/ui/modals/ok_cancel_dialog.dart';
 import 'package:get_it_mixin/get_it_mixin.dart';
 
 class ListDevicesPage extends StatelessWidget with GetItMixin {

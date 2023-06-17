@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tg_app/ui/common/buttons.dart';
+import 'package:telegram_flutter/ui/common/buttons.dart';
 
 class OkCancelDialog extends StatelessWidget {
   const OkCancelDialog({Key? key, required this.title, required this.desc})

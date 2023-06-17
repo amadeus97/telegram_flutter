@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:tg_app/logic/data/lat_lng.dart';
+import 'package:telegram_flutter/logic/data/lat_lng.dart';
 
 /// Might handle initialization of the Maps API, and holds common tasks related to Maps, like linking out
 class MapsManager {

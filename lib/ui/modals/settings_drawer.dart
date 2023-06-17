@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tg_app/logic/settings_manager.dart';
-import 'package:tg_app/main.dart';
+import 'package:telegram_flutter/logic/settings_manager.dart';
+import 'package:telegram_flutter/main.dart';
 import 'package:gap/gap.dart';
 import 'package:get_it_mixin/get_it_mixin.dart';
 

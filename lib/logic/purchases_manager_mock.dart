@@ -1,4 +1,4 @@
-import 'package:tg_app/logic/purchases_manager.dart';
+import 'package:telegram_flutter/logic/purchases_manager.dart';
 
 class PurchasesManagerMock extends PurchasesManager {
   @override

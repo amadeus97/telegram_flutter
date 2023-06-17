@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tg_app/logic/maps_manager.dart';
-import 'package:tg_app/logic/purchases_manager.dart';
-import 'package:tg_app/main.dart';
-import 'package:tg_app/ui/common/buttons.dart';
+import 'package:telegram_flutter/logic/maps_manager.dart';
+import 'package:telegram_flutter/logic/purchases_manager.dart';
+import 'package:telegram_flutter/main.dart';
+import 'package:telegram_flutter/ui/common/buttons.dart';
 import 'package:get_it_mixin/get_it_mixin.dart';
 
 class MapPage extends StatelessWidget with GetItMixin {

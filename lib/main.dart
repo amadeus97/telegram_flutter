@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:tg_app/logic/app_manager.dart';
-import 'package:tg_app/logic/bluetooth_manager.dart';
-import 'package:tg_app/logic/bluetooth_service.dart';
-import 'package:tg_app/logic/bluetooth_service_mock.dart';
-import 'package:tg_app/logic/location_service.dart';
-import 'package:tg_app/logic/maps_manager.dart';
-import 'package:tg_app/logic/purchases_manager.dart';
-import 'package:tg_app/logic/purchases_manager_mock.dart';
-import 'package:tg_app/logic/settings_manager.dart';
-import 'package:tg_app/ui/main_app.dart';
+import 'package:telegram_flutter/logic/app_manager.dart';
+import 'package:telegram_flutter/logic/bluetooth_manager.dart';
+import 'package:telegram_flutter/logic/bluetooth_service.dart';
+import 'package:telegram_flutter/logic/bluetooth_service_mock.dart';
+import 'package:telegram_flutter/logic/location_service.dart';
+import 'package:telegram_flutter/logic/maps_manager.dart';
+import 'package:telegram_flutter/logic/purchases_manager.dart';
+import 'package:telegram_flutter/logic/purchases_manager_mock.dart';
+import 'package:telegram_flutter/logic/settings_manager.dart';
+import 'package:telegram_flutter/ui/main_app.dart';
 import 'package:get_it/get_it.dart';
 
 void main() {

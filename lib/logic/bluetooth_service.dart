@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:tg_app/logic/data/bluetooth_device_info.dart';
+import 'package:telegram_flutter/logic/data/bluetooth_device_info.dart';
 import 'package:get_it/get_it.dart';
 
 /// Service that scans for available bluetooth devices and notifies a listener when it finds them.

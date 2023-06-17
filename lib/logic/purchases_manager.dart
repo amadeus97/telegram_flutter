@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:tg_app/main.dart';
-import 'package:tg_app/ui/modals/purchase_sheet.dart';
+import 'package:telegram_flutter/main.dart';
+import 'package:telegram_flutter/ui/modals/purchase_sheet.dart';
 
 class PurchasesManager {
   final isProEnabled = ValueNotifier<bool>(false);

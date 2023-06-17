@@ -1,4 +1,4 @@
-import 'package:tg_app/logic/data/lat_lng.dart';
+import 'package:telegram_flutter/logic/data/lat_lng.dart';
 
 /// A simple service facade that returns the current GPS location of the device
 class LocationService {

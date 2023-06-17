@@ -1,13 +1,13 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:tg_app/logic/app_manager.dart';
-import 'package:tg_app/logic/settings_manager.dart';
-import 'package:tg_app/main.dart';
-import 'package:tg_app/ui/modals/settings_drawer.dart';
-import 'package:tg_app/ui/pages/list_devices_page.dart';
-import 'package:tg_app/ui/pages/maps_page.dart';
-import 'package:tg_app/ui/pages/splash_page.dart';
+import 'package:telegram_flutter/logic/app_manager.dart';
+import 'package:telegram_flutter/logic/settings_manager.dart';
+import 'package:telegram_flutter/main.dart';
+import 'package:telegram_flutter/ui/modals/settings_drawer.dart';
+import 'package:telegram_flutter/ui/pages/list_devices_page.dart';
+import 'package:telegram_flutter/ui/pages/maps_page.dart';
+import 'package:telegram_flutter/ui/pages/splash_page.dart';
 import 'package:get_it/get_it.dart';
 import 'package:get_it_mixin/get_it_mixin.dart';
 
@@ -91,7 +91,7 @@ class _MainAppScaffoldState extends State<_MainAppScaffold>
       bottomNavigationBar: TabBar(
         controller: _tabController,
         labelPadding: const EdgeInsets.all(16),
-        labelColor: Theme.of(context).textTheme.bodyText1!.color,
+        labelColor: Theme.of(context).textTheme.bodyLarge!.color,
         tabs: const [
           Text('All Devices'),
           Text('Maps'),

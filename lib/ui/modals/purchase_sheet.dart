@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tg_app/main.dart';
-import 'package:tg_app/ui/common/buttons.dart';
+import 'package:telegram_flutter/main.dart';
+import 'package:telegram_flutter/ui/common/buttons.dart';
 import 'package:gap/gap.dart';
 
 class PurchaseSheet extends StatelessWidget {

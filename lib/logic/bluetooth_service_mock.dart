@@ -1,5 +1,5 @@
-import 'package:tg_app/logic/bluetooth_service.dart';
-import 'package:tg_app/logic/data/bluetooth_device_info.dart';
+import 'package:telegram_flutter/logic/bluetooth_service.dart';
+import 'package:telegram_flutter/logic/data/bluetooth_device_info.dart';
 
 class BlueToothServiceMock extends BlueToothService {
   @override
