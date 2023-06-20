@@ -1,15 +1,17 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
+import 'package:get_it_mixin/get_it_mixin.dart';
+import 'package:telegram_flutter/main.dart';
 import 'package:telegram_flutter/logic/app_manager.dart';
 import 'package:telegram_flutter/logic/settings_manager.dart';
-import 'package:telegram_flutter/main.dart';
 import 'package:telegram_flutter/ui/modals/settings_drawer.dart';
+import 'package:telegram_flutter/ui/pages/authentication_page.dart';
+import 'package:telegram_flutter/ui/pages/country_selection_page.dart';
 import 'package:telegram_flutter/ui/pages/list_devices_page.dart';
 import 'package:telegram_flutter/ui/pages/maps_page.dart';
 import 'package:telegram_flutter/ui/pages/splash_page.dart';
-import 'package:get_it/get_it.dart';
-import 'package:get_it_mixin/get_it_mixin.dart';
 
 class MainApp extends StatefulWidget with GetItStatefulWidgetMixin {
   MainApp({Key? key}) : super(key: key);
@@ -39,11 +41,29 @@ class _MainAppState extends State<MainApp> with GetItStateMixin {
   Widget build(BuildContext context) {
     bool bootstrapComplete = watchX((AppManager m) => m.isBootstrapComplete);
     bool useDarkMode = watchX((SettingsManager m) => m.darkMode);
+    bool authenticated = watchX((SettingsManager m) => m.authenticated);
     return bootstrapComplete == false
         ? const SplashPage()
         : MaterialApp(
             theme: useDarkMode ? ThemeData.dark() : ThemeData.light(),
-            home: const _MainAppScaffold(),
+            initialRoute: authenticated ? '/' : 'authentication',
+            onGenerateRoute: (RouteSettings routeSettings) {
+              return MaterialPageRoute<void>(
+                settings: routeSettings,
+                builder: (BuildContext context) {
+                  switch (routeSettings.name) {
+                    case '/':
+                      return const _MainAppScaffold();
+                    case 'authentication':
+                      return const AuthenticationPage();
+                    case 'country_selection':
+                      return const CountrySelectionPage();
+                    default:
+                      return const _MainAppScaffold();
+                  }
+                },
+              );
+            },
           );
   }
 }

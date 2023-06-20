@@ -10,6 +10,8 @@ class SettingsManager {
   /// Bind a `_scheduleSave` call to each notifier as a side-effect
   late final darkMode = ValueNotifier<bool>(false)..addListener(_scheduleSave);
   late final useMetric = ValueNotifier<bool>(false)..addListener(_scheduleSave);
+  late final authenticated = ValueNotifier<bool>(false)
+    ..addListener(_scheduleSave);
 
   final _saveFile = SavedMap('settings');
 
@@ -17,6 +19,7 @@ class SettingsManager {
     await _saveFile.save({
       'darkMode': darkMode.value,
       'useMetric': useMetric.value,
+      'authenticated': authenticated.value,
     });
   }
 
@@ -24,6 +27,7 @@ class SettingsManager {
     final map = await _saveFile.load();
     darkMode.value = map['darkMode'] ?? false;
     useMetric.value = map['useMetric'] ?? false;
+    authenticated.value = map['authenticated'] ?? false;
   }
 
   // Todo: debounce instead of scheduleMicrotask
